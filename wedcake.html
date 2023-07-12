@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body bgcolor="#e3dac9">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #79443b;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #cd9575;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #79443b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #efdecd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+  <div class="dropdown">
+  <button class="dropbtn"><i class="fa fa-fw fa-user"></i>About Us 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="aboutus.html">About SHAZ.SO Bakery</a>
+      <a href="halalpolicy.html">Halal Policy</a>
+      <a href="terms.html">Terms & Conditions (T&C)</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-fw fa-birthday-cake"></i>Cake 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="cake.html">Cake</a>
+      <a href="wedcake.html">Wedding Cake</a>
+      <a href="birthday.html">Birthday Cake</a>
+    </div>
+  </div> 
+  <a href="pastry.html"><i class="fa fa-fw fa-cloud"></i>Pastry</a>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-fw fa-soccer-ball-o"></i>Cookies 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="cookies.html">Modern Cookies</a>
+      <a href="rayacookies.html">Raya Cookies</a>
+    </div>
+  </div>
+  <a href="brownies.html"><i class="fa fa-fw fa-cubes"></i>Brownies</a>
+ <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-fw fa-coffee"></i>Drinks 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="hotdrinks.html">Hot</a>
+      <a href="cold.html">Cold</a>
+    </div>
+  </div> 
+   <a href="accessories.html"><i class="fa fa-fw fa-gift"></i>Decorating Accessories</a> 
+   <a href="others.html">Others</a>
+</div>
+</body>
+
+<br>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white; 
+  ;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>BAKED FOR YOUR ETERNAL LOVE</h1>
+<hr>
+
+<h2>Wedding Cakes</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column wedding cake">
+    <div class="card">
+    <div class="content">
+      <img src="image/wedcake1.jpg" alt="Semi-Naked Red Roses Cake" style="width:100%">
+      <h4>Semi-Naked Red Roses Cake</h4>
+      <p>RM230</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+  <div class="column wedding cake">
+    <div class="card">
+    <div class="content">
+    <img src="image/wedcake9.jpg" alt="Gilded Glory Cake" style="width:100%">
+      <h4>Gilded Glory Cake</h4>
+      <p>RM350</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+  <div class="column wedding cake">
+    <div class="card">
+    <div class="content">
+    <img src="image/wedcake7.jpg" alt="Vintage Style Cake" style="width:100%">
+      <h4>Vintage Style Cake</h4>
+      <p>RM189</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+  <div class="column wedding cake">
+    <div class="card">
+    <div class="content">
+    <img src="image/wedcake2.jpg" alt="2-Tier Blush Pink Floral Cake" style="width:100%">
+      <h4>Blush Pink Floral Cake</h4>
+      <p>RM420</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+  <div class="column wedding cake">
+    <div class="card">
+    <div class="content">
+    <img src="image/wedcake3.jpg" alt="Petal Single-Tier Cake" style="width:100%">
+      <h4>Petal Single-Tier Cake</h4>
+      <p>RM398</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+  <div class="column wedding cake">
+    <div class="card">
+    <div class="content">
+    <img src="image/wedcake4.jpg" alt="3-Tier Personalised Approach Cake" style="width:100%">
+      <h4>3-Tier Personalised Approach Cake</h4>
+      <p>RM450</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+  <div class="column wedding cake">
+    <div class="card">
+    <div class="content">
+    <img src="image/wedcake5.jpg" alt="Textured Colourful Florals Cake" style="width:100%">
+      <h4>Textured Colourful Florals Cake</h4>
+      <p>RM360</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+  <div class="column wedding cake">
+    <div class="card">
+    <div class="content">
+    <img src="image/wedcake6.jpg" alt="Watercolor Ombre Sugar Flower Cake" style="width:100%">
+      <h4>Watercolor Ombre Sugar Flower Cake</h4>
+      <p>RM379</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+<div class="column wedding cake">
+    <div class="card">
+    <div class="content">
+    <img src="image/wedcake8.jpg" alt="Customised Cake" style="width:100%">
+      <h4>Customised Yours Now!</h4>
+      <p>Personally customise your own wedding cake starting from RM250</p>
+      <p><button>Customised Now</button></p>
+    </div>
+  </div>
+</div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+
+<br><br>
+<head>
+  <title>SHAZ.SO Bakery</title>
+  <style>
+    /* CSS styles for the footer */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    main {
+      flex: 1;
+    }
+    
+    footer {
+      background-color: #cd9575;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .column {
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+      padding: 10px;
+    }
+    
+    a:link,
+    a:visited {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: black;
+      background-color: transparent;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Your webpage content here -->
+  <main>
+    <!-- Content goes here -->
+  </main>
+  
+  <footer>
+        <div class="column">
+      <h3>ABOUT US</h3>
+      <a href="aboutus.html">About SHAZ.SO Bakery</a>
+      <br><br>
+      <a href="halalpolicy.html">Halal Policy</a>
+      <br><br>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+    <div class="column">
+      <h3>CONNECT WITH US</h3>
+      <a href="mailto:shazsweetobsessions@gmail.com" target="_blank">Email:shazsweetobsessions@gmail.com</a>
+      <br><br>
+      <a href="https://instagram.com/shaz.so?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">Instagram</a>
+      <br><br>
+      <a href="#" target="_blank">WhatsApp</a>
+    </div>
+    <div class="column">
+      <h3>CUSTOMER CARE</h3>
+      <a href="aboutus.html" target="_blank">FAQs</a>
+      <br><br>
+      <a href="aboutus.html" target="_blank">Feedback Form</a>
+    </div>
+  </footer>
+</body>
+
+</body>
+</html> 
